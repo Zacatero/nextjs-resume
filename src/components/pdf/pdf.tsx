@@ -269,7 +269,7 @@ function ProfessionalExperienceDetails({
         <View style={styles.itemSubheadingSubRow}>
           {professionalExperience.titles.map((title, index) => (
             <Text key={index} style={styles.itemSubheadingItalic}>
-              {title.title} {title.startDate}—{title.endDate ?? 'Current'}
+              {title.title}, {title.startDate}—{title.endDate ?? 'Current'}
             </Text>
           ))}
         </View>
@@ -362,7 +362,7 @@ export default function PDF({ privateInformation }: PDFProperties): ReactNode {
           <View style={styles.section}>
             <View style={styles.sectionHeading}>
               <CircleGraduationCap size={fontSizes.m} />
-              <Text>Achievements</Text>
+              <Text>Education</Text>
             </View>
             {sortedAchievements.map((achievement) => (
               <View key={achievement._id}>
