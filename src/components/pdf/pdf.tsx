@@ -269,7 +269,7 @@ function ProfessionalExperienceDetails({
         <View style={styles.itemSubheadingSubRow}>
           {professionalExperience.titles.map((title, index) => (
             <Text key={index} style={styles.itemSubheadingItalic}>
-              {title.title}&apos,&apos {title.startDate}—{title.endDate ?? 'Current'}
+              {title.title}&apos;&apos {title.startDate}—{title.endDate ?? 'Current'}
             </Text>
           ))}
         </View>
