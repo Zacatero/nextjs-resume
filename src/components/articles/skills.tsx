@@ -15,7 +15,7 @@ export default function Skills(): ReactNode {
       />
 
       <div className="grid grid-flow-row gap-x-6 gap-y-2 lg:grid-flow-col">
-        {allSkills.map((skill, skillIndex) => (
+        {allSkills.map((skill) => (
           <div className="space-y-2" key={skill._id}>
             <Heading level={4}>
               <div className="flex items-center gap-2">
