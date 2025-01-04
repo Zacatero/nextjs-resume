@@ -325,11 +325,6 @@ export default function PDF({ privateInformation }: PDFProperties): ReactNode {
                 <View key={skill._id}>
                   <View style={styles.itemHeading}>
                     <View style={styles.sectionHeadingStars}>
-                      {Array.from({
-                        length: allSkills.length - skillIndex,
-                      }).map((star, starIndex) => (
-                        <Star key={starIndex} size={fontSizes.xxs} />
-                      ))}
                     </View>
                     <Text style={styles.bold}>{skill.title}</Text>
                   </View>
