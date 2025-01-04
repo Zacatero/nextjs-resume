@@ -11,7 +11,7 @@ export default function Skills(): ReactNode {
       <SectionHeading
         Icon={CheckIcon}
         level={3}
-        text="Skills &amp; Expertise"
+        text="Expertise"
       />
 
       <div className="grid grid-flow-row gap-x-6 gap-y-2 lg:grid-flow-col">
