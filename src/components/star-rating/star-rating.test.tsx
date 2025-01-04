@@ -4,7 +4,7 @@ import StarRating from 'src/components/star-rating/star-rating';
 
 describe('<StarRating />', () => {
   test('Snapshot', () => {
-    const { asFragment } = render(<StarRating stars={3} />);
+    const { asFragment } = render(<StarRating stars={0} />);
     expect(asFragment).toMatchSnapshot();
   });
 });
