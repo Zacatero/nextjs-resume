@@ -2,7 +2,7 @@ import { StarIcon } from '@heroicons/react/24/solid';
 import { ReactNode } from 'react';
 
 interface StarRatingProperties {
-  stars: 1 | 2 | 3;
+  stars: 0 | 1 | 2 | 3;
 }
 
 function Star(): ReactNode {
