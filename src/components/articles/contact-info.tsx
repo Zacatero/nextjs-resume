@@ -20,8 +20,8 @@ export default function ContactInformation({
 
       <ul>
         <li>
-          <strong>LinkedIn:</strong> &apos;https://linkedin.com/in/max-trivers&apos;
-          <strong>Location:</strong> {personal.location}
+          <a href="https://linkedin.com/in/max-trivers"><strong>LinkedIn</strong></a></li>
+          <li><strong>Location:</strong> {personal.location}
         </li>
 
         {/* private access required */}
