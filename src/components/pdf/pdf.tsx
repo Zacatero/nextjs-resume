@@ -268,7 +268,7 @@ function ProfessionalExperienceDetails({
         <View style={styles.itemSubheadingSubRow}>
           {professionalExperience.titles.map((title, index) => (
             <Text key={index} style={styles.itemSubheadingItalic}>
-              {title.title}; {title.startDate} — {title.endDate ?? 'Current'}
+              {title.title}; {title.startDate}—{title.endDate ?? 'Current'}
             </Text>
           ))}
         </View>
@@ -308,7 +308,7 @@ export default function PDF({ privateInformation }: PDFProperties): ReactNode {
                 <Text style={styles.bold}>Location:</Text>
                 <Text>&nbsp;{personal.location}</Text>
                 <Text style={styles.bold}><br>LinkedIn:</Text>
-                <Text>&nbsp;<a href="https://linkedin.com/in/max-trivers">https://linkedin.com/in/max-trivers</a></Text>
+                <Text>&nbsp;{personal.location}</Text>
               </View>
               {privateInformation?.map((privateField) => (
                 <View key={privateField._id}>
