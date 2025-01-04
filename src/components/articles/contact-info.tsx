@@ -20,6 +20,7 @@ export default function ContactInformation({
 
       <ul>
         <li>
+          <strong>LinkedIn:</strong> 'https://linkedin.com/in/max-trivers'
           <strong>Location:</strong> {personal.location}
         </li>
 
