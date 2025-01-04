@@ -20,7 +20,9 @@ export default function Skills(): ReactNode {
           <div className="space-y-2" key={skill._id}>
             <Heading level={4}>
               <div className="flex items-center gap-2">
-                <StarRating />
+                <StarRating
+                  stars={(allSkills.length - skillIndex) as 1 | 2 | 3}
+                />
                 {skill.title}
               </div>
             </Heading>
