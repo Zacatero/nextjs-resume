@@ -4,7 +4,6 @@ import { ReactNode } from 'react';
 import { Heading } from 'src/components/heading/heading';
 import Prose from 'src/components/prose/prose';
 import SectionHeading from 'src/components/section-heading/section-heading';
-import StarRating from 'src/components/star-rating/star-rating';
 
 export default function Skills(): ReactNode {
   return (
@@ -20,9 +19,6 @@ export default function Skills(): ReactNode {
           <div className="space-y-2" key={skill._id}>
             <Heading level={4}>
               <div className="flex items-center gap-2">
-                <StarRating
-                  stars={(allSkills.length - skillIndex) as 1 | 2 | 3}
-                />
                 {skill.title}
               </div>
             </Heading>
