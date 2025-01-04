@@ -320,7 +320,7 @@ export default function PDF({ privateInformation }: PDFProperties): ReactNode {
                 <CircleCheck size={fontSizes.m} />
                 <Text>Skills &amp; Expertise</Text>
               </View>
-              {allSkills.map((skill, skillIndex) => (
+              {allSkills.map((skill) => (
                 <View key={skill._id}>
                   <View style={styles.itemHeading}>
                     <View style={styles.sectionHeadingStars}>
