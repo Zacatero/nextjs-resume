@@ -307,6 +307,8 @@ export default function PDF({ privateInformation }: PDFProperties): ReactNode {
               <View style={styles.flexRow}>
                 <Text style={styles.bold}>Location:</Text>
                 <Text>&nbsp;{personal.location}</Text>
+                <Text style={styles.bold}><br>LinkedIn:</Text>
+                <Text>&nbsp;<a href="https://linkedin.com/in/max-trivers">https://linkedin.com/in/max-trivers</a></Text>
               </View>
               {privateInformation?.map((privateField) => (
                 <View key={privateField._id}>
