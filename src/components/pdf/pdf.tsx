@@ -268,7 +268,7 @@ function ProfessionalExperienceDetails({
         <View style={styles.itemSubheadingSubRow}>
           {professionalExperience.titles.map((title, index) => (
             <Text key={index} style={styles.itemSubheadingItalic}>
-              {title.title}; {title.startDate}—{title.endDate ?? 'Current'}
+              {title.title}; {title.startDate}&nbsp;—&nbsp;{title.endDate ?? 'Current'}
             </Text>
           ))}
         </View>
@@ -318,7 +318,7 @@ export default function PDF({ privateInformation }: PDFProperties): ReactNode {
             <View style={styles.section}>
               <View style={styles.sectionHeading}>
                 <CircleCheck size={fontSizes.m} />
-                <Text>Skills &amp; Expertise</Text>
+                <Text>Expertise</Text>
               </View>
               {allSkills.map((skill) => (
                 <View key={skill._id}>
