@@ -1,5 +1,5 @@
 ---
-organization: 1Path Managed Services
+organization: RedHelm
 titles:
   - title: Manager, Specialty Services
     startDate: August 2024
