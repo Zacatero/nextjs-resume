@@ -2,4 +2,4 @@
 title: Education
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu leo et ante fermentum imperdiet.
+Committed to continuous professional development through industry certifications, technical training, and knowledge sharing. Active in professional organizations and community engagement, promoting best practices in information technology and fostering the growth of the next generation of IT professionals.
