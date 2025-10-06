@@ -1,11 +1,9 @@
 ---
 organization: RedHelm
 titles:
-  - title: Manager, Specialty Services
-    startDate: August 2024
-  - title: Team Lead, Deployments & Mobility
+  - title: Systems Engineer Team Lead, Specialty Services
     startDate: February 2024
-    endDate: August 2024
+    endDate: October 2025
   - title: Systems Administrator III
     startDate: August 2023
     endDate: February 2024
