@@ -1,7 +1,7 @@
 ---
 organization: RedHelm
 titles:
-  - title: Systems Engineer Team Lead, Specialty Services
+  - title: Lead Deployments Engineer / M365 Engineer / Systems Engineer
     startDate: February 2024
     endDate: October 2025
   - title: Systems Administrator III
