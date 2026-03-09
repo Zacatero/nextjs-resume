@@ -1,8 +1,3 @@
 [test]
-preload = ["./test-happydom.ts", "./test-cleanup.ts"]
+preload = "./happydom.ts"
 coverage = true
-coverageReporter = ["text", "lcov"]
-coveragePathIgnorePatterns = [
-  ".contentlayer/**",
-  "src/test-*.{ts,tsx}",
-]

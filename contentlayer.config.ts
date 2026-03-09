@@ -30,14 +30,6 @@ export const Personal = defineDocumentType(() => ({
         'Your general location of residence, not your personal address',
       required: true,
     },
-    githubUrl: {
-      type: 'string',
-      description: 'URL for your GitHub profile',
-    },
-    linkedInUrl: {
-      type: 'string',
-      description: 'URL for your LinkedIn profile',
-    },
   },
 }));
 
@@ -62,14 +54,14 @@ export const ProfessionalTitle = defineNestedType(() => ({
       required: true,
     },
     startDate: {
-      type: 'date',
-      description: 'A parsable date for when you started the role',
+      type: 'string',
+      description: 'The year when you started the role',
       required: true,
     },
     endDate: {
-      type: 'date',
+      type: 'string',
       description:
-        'A parsable date for when you ended the role, or empty if it is your current role',
+        'The year when you ended the role, or empty if it is your current role',
       required: false,
     },
     description: {
@@ -83,7 +75,7 @@ export const ProfessionalTitle = defineNestedType(() => ({
 
 export const ProfessionalExperience = defineDocumentType(() => ({
   name: 'ProfessionalExperience',
-  filePathPattern: 'professional-experiences/*.md',
+  filePathPattern: 'professionalExperiences/*.md',
   fields: {
     organization: {
       type: 'string',
@@ -124,7 +116,7 @@ export const Achievement = defineDocumentType(() => ({
 
 export const AdditionalInfo = defineDocumentType(() => ({
   name: 'AdditionalInfo',
-  filePathPattern: 'additional-info.md',
+  filePathPattern: 'additionalInfo.md',
   isSingleton: true,
   fields: {
     title: {
@@ -137,28 +129,12 @@ export const AdditionalInfo = defineDocumentType(() => ({
 
 export const PrivateField = defineDocumentType(() => ({
   name: 'PrivateField',
-  filePathPattern: 'private-fields/*.md',
+  filePathPattern: 'privateFields/*.md',
   fields: {
     label: {
       type: 'string',
       description: 'A label to describe the private field',
       required: true,
-    },
-  },
-}));
-
-export const Salary = defineDocumentType(() => ({
-  name: 'Salary',
-  filePathPattern: 'salary.md',
-  isSingleton: true,
-  fields: {
-    currentSalary: {
-      type: 'string',
-      description: 'Your current salary (only visible in private mode)',
-    },
-    desiredSalary: {
-      type: 'string',
-      description: 'Your desired salary (only visible in private mode)',
     },
   },
 }));
@@ -172,6 +148,5 @@ export default makeSource({
     Achievement,
     AdditionalInfo,
     PrivateField,
-    Salary,
   ],
 });
