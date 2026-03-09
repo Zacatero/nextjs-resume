@@ -17,7 +17,7 @@
     "moduleResolution": "bundler",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "jsx": "preserve",
+    "jsx": "react-jsx",
     "incremental": true,
     "allowImportingTsExtensions": true,
     "moduleDetection": "force",
@@ -31,14 +31,14 @@
       "@config/*": [
         "./edit-me/config/*"
       ],
-      "@config-types/*": [
-        "./edit-me/types/*"
-      ],
       "@content": [
         "./.contentlayer/generated"
       ],
       "@test-utils": [
-        "./src/test-utils.tsx"
+        "src/test-utilities.tsx"
+      ],
+      "@icons": [
+        "src/components/icons/index.ts"
       ]
     },
     "types": [
@@ -53,6 +53,7 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    ".contentlayer/generated"
+    ".contentlayer/generated",
+    ".next/dev/types/**/*.ts"
   ]
 }
